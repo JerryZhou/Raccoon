@@ -1,0 +1,1 @@
+#include "../../src/app/net/http/svg/dwsvglinechartwriter.h"

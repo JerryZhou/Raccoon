@@ -1,0 +1,1 @@
+#include "../../src/gui/resource/dwresourcemappingfile.h"

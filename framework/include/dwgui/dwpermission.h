@@ -1,0 +1,1 @@
+#include "../../src/gui/plugin/dwpermission.h"

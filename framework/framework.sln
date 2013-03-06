@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dwcored", "F:/raccoon/framework/src/core\dwcored.vcproj", "{973BC1AE-37CC-3595-A0AA-54C55E813271}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dwgraphicsd", "F:/raccoon/framework/src/graphics\dwgraphicsd.vcproj", "{7669E219-ABE5-3D76-9909-3CBC2F04A971}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dwguid", "F:/raccoon/framework/src/gui\dwguid.vcproj", "{7F6486A9-83B1-3DF1-922E-BC10991E574C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dwluabindd", "F:/raccoon/framework/src/luabind\dwluabindd.vcproj", "{CB92AFEE-586C-39CF-A944-2C858D6A33A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dwappd", "F:/raccoon/framework/src/app\dwappd.vcproj", "{737C8542-049D-3DB0-9705-A58B46FA58A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug|Win32
+		ConfigName.1 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{7669E219-ABE5-3D76-9909-3CBC2F04A971}.0 = {973BC1AE-37CC-3595-A0AA-54C55E813271}
+		{7F6486A9-83B1-3DF1-922E-BC10991E574C}.0 = {973BC1AE-37CC-3595-A0AA-54C55E813271}
+		{7F6486A9-83B1-3DF1-922E-BC10991E574C}.1 = {7669E219-ABE5-3D76-9909-3CBC2F04A971}
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.0 = {973BC1AE-37CC-3595-A0AA-54C55E813271}
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.1 = {7F6486A9-83B1-3DF1-922E-BC10991E574C}
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.2 = {7669E219-ABE5-3D76-9909-3CBC2F04A971}
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.0 = {973BC1AE-37CC-3595-A0AA-54C55E813271}
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.1 = {7669E219-ABE5-3D76-9909-3CBC2F04A971}
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.2 = {7F6486A9-83B1-3DF1-922E-BC10991E574C}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{973BC1AE-37CC-3595-A0AA-54C55E813271}.Debug|Win32.ActiveCfg = Debug|Win32
+		{973BC1AE-37CC-3595-A0AA-54C55E813271}.Debug|Win32.Build.0 = Debug|Win32
+		{973BC1AE-37CC-3595-A0AA-54C55E813271}.Release|Win32.ActiveCfg = Release|Win32
+		{973BC1AE-37CC-3595-A0AA-54C55E813271}.Release|Win32.Build.0 = Release|Win32
+		{7669E219-ABE5-3D76-9909-3CBC2F04A971}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7669E219-ABE5-3D76-9909-3CBC2F04A971}.Debug|Win32.Build.0 = Debug|Win32
+		{7669E219-ABE5-3D76-9909-3CBC2F04A971}.Release|Win32.ActiveCfg = Release|Win32
+		{7669E219-ABE5-3D76-9909-3CBC2F04A971}.Release|Win32.Build.0 = Release|Win32
+		{7F6486A9-83B1-3DF1-922E-BC10991E574C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7F6486A9-83B1-3DF1-922E-BC10991E574C}.Debug|Win32.Build.0 = Debug|Win32
+		{7F6486A9-83B1-3DF1-922E-BC10991E574C}.Release|Win32.ActiveCfg = Release|Win32
+		{7F6486A9-83B1-3DF1-922E-BC10991E574C}.Release|Win32.Build.0 = Release|Win32
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.Debug|Win32.Build.0 = Debug|Win32
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.Release|Win32.ActiveCfg = Release|Win32
+		{CB92AFEE-586C-39CF-A944-2C858D6A33A2}.Release|Win32.Build.0 = Release|Win32
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.Debug|Win32.Build.0 = Debug|Win32
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.Release|Win32.ActiveCfg = Release|Win32
+		{737C8542-049D-3DB0-9705-A58B46FA58A4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

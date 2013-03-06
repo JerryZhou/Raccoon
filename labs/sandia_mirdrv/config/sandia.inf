@@ -1,0 +1,116 @@
+[Version]
+Signature = "$CHICAGO$"
+Provider = "zhouyi"
+ClassGUID = {4D36E968-E325-11CE-BFC1-08002BE10318}
+Class = Display
+DriverVer = 07/08/2012,1.0
+
+[DestinationDirs]
+DefaultDestDir   = 11
+sandia.Miniport  = 12  ; drivers
+sandia.Display   = 11  ; system32
+
+;
+; Driver information
+;
+
+[Manufacturer]
+"zhouyi" = sandia.Mfg
+
+[sandia.Mfg]
+"sandia mirror driver" = sandia, sandia_mirror_driver
+
+;
+; General installation section
+;
+
+[sandia]
+CopyFiles = sandia.Miniport, sandia.Display
+
+;
+; File sections
+;
+
+[sandia.Miniport]
+sandia.sys
+
+[sandia.Display]
+sandia.dll
+
+;
+; Service Installation
+;
+
+[sandia.Services]
+AddService = sandia, 0x00000002, sandia_Service_Inst, sandia_EventLog_Inst
+
+[sandia_Service_Inst]
+
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 1                  ; SERVICE_SYSTEM_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Video
+ServiceBinary  = %12%\sandia.sys
+
+[sandia_EventLog_Inst]
+AddReg = sandia_Reg_Inst
+
+[sandia_Reg_Inst]
+HKR,,EventMessageFile,0x00020000,"%SystemRoot%\System32\IoLogMsg.dll;%SystemRoot%\System32\drivers\sandia.sys"
+HKR,,TypesSupported,0x00010001,7
+
+;
+; Software Installation
+;
+
+[sandia.SoftwareSettings]
+AddReg = sandia_SoftwareDeviceSettings
+
+[sandia_SoftwareDeviceSettings]
+HKR,, MirrorDriver,                %REG_DWORD%,    1
+HKR,, InstalledDisplayDrivers,     %REG_MULTI_SZ%, sandia
+HKR,, VgaCompatible,               %REG_DWORD%,    0
+HKR,, Attach.ToDesktop,            %REG_DWORD%,    1
+
+[sandia.OpenGLSoftwareSettings]
+AddReg = sandia_OpenGLSoftwareSettings
+
+[sandia_OpenGLSoftwareSettings]
+
+;
+; Not currently used:
+;
+
+[sandia.GeneralConfigData]
+MaximumNumberOfDevices = 1
+KeepExistingDriverEnabled = 1
+
+;
+; Source file information
+;
+
+[SourceDisksNames.x86]
+1 = %DiskId%,,,""
+
+[SourceDisksFiles]
+sandia.sys  = 1
+sandia.dll = 1
+
+[Strings]
+
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+;
+; Localizable Strings
+;
+
+DiskId       = "Mirror Installation DISK (VIDEO)"

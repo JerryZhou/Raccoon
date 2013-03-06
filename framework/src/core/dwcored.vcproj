@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="dwcored"
+	ProjectGUID="{973BC1AE-37CC-3595-A0AA-54C55E813271}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\debug_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\debug_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\debug_static\"
+				Optimization ="4"
+				PrecompiledHeaderFile="$(IntDir)\dwcored.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_CORE,EA_DLL,DW_SAFE_PARSER,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwcored.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_CORE,EA_DLL,DW_SAFE_PARSER,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,_DEBUG"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\release_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\release_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\release_static\"
+				Optimization ="2"
+				PrecompiledHeaderFile="$(IntDir)\dwcore.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_CORE,EA_DLL,DW_SAFE_PARSER,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,NDEBUG"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwcore.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_CORE,EA_DLL,DW_SAFE_PARSER,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="3rdparty\Markup.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\adler32.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="eastl\allocator.cpp" />
+			<File
+				RelativePath="eastl\assert.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\compress.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\crc32.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\crc32_zip.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\deflate.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="global\dwallocator.cpp" />
+			<File
+				RelativePath="tools\dwarraylist.cpp" />
+			<File
+				RelativePath="kernel\dwatomicint.cpp" />
+			<File
+				RelativePath="io\dwbuffer.cpp" />
+			<File
+				RelativePath="tools\dwbytearray.cpp" />
+			<File
+				RelativePath="dwcore.cpp" />
+			<File
+				RelativePath="tools\dwcryptographichash.cpp" />
+			<File
+				RelativePath="kernel\dwdebug.cpp" />
+			<File
+				RelativePath="tools\dwdequelist.cpp" />
+			<File
+				RelativePath="tools\dwdir.cpp" />
+			<File
+				RelativePath="io\dwfile.cpp" />
+			<File
+				RelativePath="io\dwfileengine.cpp" />
+			<File
+				RelativePath="tools\dwhash.cpp" />
+			<File
+				RelativePath="io\dwiodevice.cpp" />
+			<File
+				RelativePath="parser\dwjsondocument.cpp" />
+			<File
+				RelativePath="parser\dwjsonobject.cpp" />
+			<File
+				RelativePath="parser\dwjsonobjectref.cpp" />
+			<File
+				RelativePath="tools\dwlinkedlist.cpp" />
+			<File
+				RelativePath="tools\dwlocks.cpp" />
+			<File
+				RelativePath="global\dwmalloc.cpp" />
+			<File
+				RelativePath="tools\dwmap.cpp" />
+			<File
+				RelativePath="tools\dwmargins.cpp" />
+			<File
+				RelativePath="global\dwmempool.cpp" />
+			<File
+				RelativePath="kernel\dwobject.cpp" />
+			<File
+				RelativePath="tools\dwobjectptr.cpp" />
+			<File
+				RelativePath="tools\dwpoint.cpp" />
+			<File
+				RelativePath="tools\dwrect.cpp" />
+			<File
+				RelativePath="io\dwresourcefileengine.cpp" />
+			<File
+				RelativePath="tools\dwset.cpp" />
+			<File
+				RelativePath="tools\dwshareddata.cpp" />
+			<File
+				RelativePath="tools\dwsize.cpp" />
+			<File
+				RelativePath="io\dwstream.cpp" />
+			<File
+				RelativePath="tools\dwstring.cpp" />
+			<File
+				RelativePath="codecs\dwtextcodecs.cpp" />
+			<File
+				RelativePath="tools\dwvariant.cpp" />
+			<File
+				RelativePath="tools\dwvector.cpp" />
+			<File
+				RelativePath="platform\windows\dwwin32api.cpp" />
+			<File
+				RelativePath="parser\dwxmldocument.cpp" />
+			<File
+				RelativePath="parser\dwxmlelement.cpp" />
+			<File
+				RelativePath="parser\dwxmlelementref.cpp" />
+			<File
+				RelativePath="zip\dwzip.cpp" />
+			<File
+				RelativePath="zip\dwziparchive.cpp" />
+			<File
+				RelativePath="zip\dwziputils.cpp" />
+			<File
+				RelativePath="eastl\fixed_pool.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\gzclose.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\gzlib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\gzread.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\gzwrite.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="eastl\hashtable.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\infback.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\inffast.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\inflate.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\inftrees.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\minizip\ioapi.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\minizip\iowin32.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\json.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\md4.cpp" />
+			<File
+				RelativePath="3rdparty\md5.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\mztools.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="eastl\red_black_tree.cpp" />
+			<File
+				RelativePath="3rdparty\sha1.cpp" />
+			<File
+				RelativePath="eastl\string.cpp" />
+			<File
+				RelativePath="3rdparty\zlib\trees.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\uncompr.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\minizip\unzip.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\minizip\zip.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\zlib\zutil.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="3rdparty\Markup.h" />
+			<File
+				RelativePath="3rdparty\crc32.h" />
+			<File
+				RelativePath="3rdparty\zlib\crc32_zip.h" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\crypt.h" />
+			<File
+				RelativePath="3rdparty\zlib\deflate.h" />
+			<File
+				RelativePath="global\dwallocator.h" />
+			<File
+				RelativePath="kernel\dwappdata.h" />
+			<File
+				RelativePath="tools\dwarraylist.h" />
+			<File
+				RelativePath="kernel\dwatomicint.h" />
+			<File
+				RelativePath="io\dwbuffer.h" />
+			<File
+				RelativePath="tools\dwbytearray.h" />
+			<File
+				RelativePath="dwcore.h" />
+			<File
+				RelativePath="tools\dwcryptographichash.h" />
+			<File
+				RelativePath="kernel\dwdebug.h" />
+			<File
+				RelativePath="tools\dwdequelist.h" />
+			<File
+				RelativePath="tools\dwdir.h" />
+			<File
+				RelativePath="io\dwfile.h" />
+			<File
+				RelativePath="io\dwfileengine.h" />
+			<File
+				RelativePath="kernel\dwglobalstatic.h" />
+			<File
+				RelativePath="tools\dwhash.h" />
+			<File
+				RelativePath="io\dwiodevice.h" />
+			<File
+				RelativePath="parser\dwjsondocument.h" />
+			<File
+				RelativePath="parser\dwjsonobject.h" />
+			<File
+				RelativePath="parser\dwjsonobjectref.h" />
+			<File
+				RelativePath="tools\dwlinkedlist.h" />
+			<File
+				RelativePath="tools\dwlocks.h" />
+			<File
+				RelativePath="global\dwmalloc.h" />
+			<File
+				RelativePath="tools\dwmap.h" />
+			<File
+				RelativePath="tools\dwmargins.h" />
+			<File
+				RelativePath="global\dwmempool.h" />
+			<File
+				RelativePath="kernel\dwobject.h" />
+			<File
+				RelativePath="tools\dwobjectptr.h" />
+			<File
+				RelativePath="tools\dwpoint.h" />
+			<File
+				RelativePath="tools\dwrect.h" />
+			<File
+				RelativePath="io\dwresourcefileengine.h" />
+			<File
+				RelativePath="tools\dwset.h" />
+			<File
+				RelativePath="tools\dwshareddata.h" />
+			<File
+				RelativePath="tools\dwsize.h" />
+			<File
+				RelativePath="io\dwstream.h" />
+			<File
+				RelativePath="tools\dwstring.h" />
+			<File
+				RelativePath="codecs\dwtextcodecs.h" />
+			<File
+				RelativePath="tools\dwtypeinfo.h" />
+			<File
+				RelativePath="global\dwtypes.h" />
+			<File
+				RelativePath="tools\dwvariant.h" />
+			<File
+				RelativePath="tools\dwvariant_p.h" />
+			<File
+				RelativePath="tools\dwvector.h" />
+			<File
+				RelativePath="platform\windows\dwwin32api.h" />
+			<File
+				RelativePath="parser\dwxmldocument.h" />
+			<File
+				RelativePath="parser\dwxmlelement.h" />
+			<File
+				RelativePath="parser\dwxmlelementref.h" />
+			<File
+				RelativePath="zip\dwzip.h" />
+			<File
+				RelativePath="zip\dwziparchive.h" />
+			<File
+				RelativePath="zip\dwziputils.h" />
+			<File
+				RelativePath="3rdparty\zlib\gzguts.h" />
+			<File
+				RelativePath="3rdparty\zlib\inffast.h" />
+			<File
+				RelativePath="3rdparty\zlib\inffixed.h" />
+			<File
+				RelativePath="3rdparty\zlib\inflate.h" />
+			<File
+				RelativePath="3rdparty\zlib\inftrees.h" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\ioapi.h" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\iowin32.h" />
+			<File
+				RelativePath="3rdparty\json.h" />
+			<File
+				RelativePath="3rdparty\md4.h" />
+			<File
+				RelativePath="3rdparty\md5.h" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\mztools.h" />
+			<File
+				RelativePath="3rdparty\sha1.h" />
+			<File
+				RelativePath="stable.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="3rdparty\stdint.h" />
+			<File
+				RelativePath="3rdparty\zlib\trees.h" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\unzip.h" />
+			<File
+				RelativePath="3rdparty\zlib\zconf.h" />
+			<File
+				RelativePath="3rdparty\zlib\minizip\zip.h" />
+			<File
+				RelativePath="3rdparty\zlib\zlib.h" />
+			<File
+				RelativePath="3rdparty\zlib\zutil.h" />
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="stable.h.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

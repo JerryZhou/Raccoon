@@ -1,0 +1,1 @@
+------------------------------------------------------------------------------- UI/1.1 Direct UI Of Raccoon-- UI Script FrameWork toolkit.-- Author: Jeffery Zhou-- RCS ID: $Id: imagecom.lua,v 1.70 2012/05/24 10:08:40 duowan.Inc $-----------------------------------------------------------------------------function GET_IMAGE_PROXY(img)	return Image._image_proxy(img)end

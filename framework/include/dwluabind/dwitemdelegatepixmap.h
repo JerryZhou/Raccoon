@@ -1,0 +1,1 @@
+#include "../../src/luabind/delegate/itemdelegate/dwitemdelegatepixmap.h"

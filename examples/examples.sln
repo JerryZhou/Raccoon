@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01simplewindow", "F:/raccoon/examples/src/01simplewindow\01simplewindow.vcproj", "{2D84BDD2-7871-3DA4-B8D2-F679EB7FCFA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02simplewidgets", "F:/raccoon/examples/src/02simplewidgets\02simplewidgets.vcproj", "{290D0822-2117-3A96-93D3-DCAA8FC2EB0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03pictureviewer", "F:/raccoon/examples/src/03pictureviewer\03pictureviewer.vcproj", "{E5FFF8C6-A231-3549-B22C-D130590F259A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04physicalgame", "F:/raccoon/examples/src/04physicalgame\04physicalgame.vcproj", "{789ED333-5793-3798-847F-F1BE480625CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05scriptengine", "F:/raccoon/examples/src/05scriptengine\05scriptengine.vcproj", "{5D3258DE-E76E-3A38-9548-9036FC39E46C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06mainapp", "F:/raccoon/examples/src/06mainapp\06mainapp.vcproj", "{BE0F785F-E458-3DEC-B699-351105C4BCC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug|Win32
+		ConfigName.1 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2D84BDD2-7871-3DA4-B8D2-F679EB7FCFA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D84BDD2-7871-3DA4-B8D2-F679EB7FCFA6}.Debug|Win32.Build.0 = Debug|Win32
+		{2D84BDD2-7871-3DA4-B8D2-F679EB7FCFA6}.Release|Win32.ActiveCfg = Release|Win32
+		{2D84BDD2-7871-3DA4-B8D2-F679EB7FCFA6}.Release|Win32.Build.0 = Release|Win32
+		{290D0822-2117-3A96-93D3-DCAA8FC2EB0E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{290D0822-2117-3A96-93D3-DCAA8FC2EB0E}.Debug|Win32.Build.0 = Debug|Win32
+		{290D0822-2117-3A96-93D3-DCAA8FC2EB0E}.Release|Win32.ActiveCfg = Release|Win32
+		{290D0822-2117-3A96-93D3-DCAA8FC2EB0E}.Release|Win32.Build.0 = Release|Win32
+		{E5FFF8C6-A231-3549-B22C-D130590F259A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5FFF8C6-A231-3549-B22C-D130590F259A}.Debug|Win32.Build.0 = Debug|Win32
+		{E5FFF8C6-A231-3549-B22C-D130590F259A}.Release|Win32.ActiveCfg = Release|Win32
+		{E5FFF8C6-A231-3549-B22C-D130590F259A}.Release|Win32.Build.0 = Release|Win32
+		{789ED333-5793-3798-847F-F1BE480625CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{789ED333-5793-3798-847F-F1BE480625CB}.Debug|Win32.Build.0 = Debug|Win32
+		{789ED333-5793-3798-847F-F1BE480625CB}.Release|Win32.ActiveCfg = Release|Win32
+		{789ED333-5793-3798-847F-F1BE480625CB}.Release|Win32.Build.0 = Release|Win32
+		{5D3258DE-E76E-3A38-9548-9036FC39E46C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5D3258DE-E76E-3A38-9548-9036FC39E46C}.Debug|Win32.Build.0 = Debug|Win32
+		{5D3258DE-E76E-3A38-9548-9036FC39E46C}.Release|Win32.ActiveCfg = Release|Win32
+		{5D3258DE-E76E-3A38-9548-9036FC39E46C}.Release|Win32.Build.0 = Release|Win32
+		{BE0F785F-E458-3DEC-B699-351105C4BCC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE0F785F-E458-3DEC-B699-351105C4BCC2}.Debug|Win32.Build.0 = Debug|Win32
+		{BE0F785F-E458-3DEC-B699-351105C4BCC2}.Release|Win32.ActiveCfg = Release|Win32
+		{BE0F785F-E458-3DEC-B699-351105C4BCC2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

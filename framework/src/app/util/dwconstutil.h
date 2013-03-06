@@ -1,0 +1,5 @@
+#pragma once
+
+//////////////////////////////////////////////////////////////////////////
+const int  InvalidIndex = -1;
+const unsigned int InvalidTimerId = (unsigned int)(-1);

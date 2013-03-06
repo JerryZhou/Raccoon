@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project name="Build_4_0" default="default" basedir=".">
+    <target name="default" />
+
+    <target name="RollingBuild">
+        <exec executable="python" failonerror="true">
+            <arg value="build.py" />
+            <arg value="clean" />
+            <arg value="package" />
+            <arg value="--release" />
+            <arg value="--recompile" />
+            <arg value="--qtdir" />
+            <arg value="${qt.dir}" />
+            <arg value="--vcdir" />
+            <arg value="${vc.dir}" />
+            <arg value="--local-build" />
+            <arg value="--setup" />
+            <arg value="--rev" />
+            <arg value="${svn.rev}" />
+            <arg value="--sign" />
+        </exec>
+    </target>
+
+    <target name="DailyBuild">
+        <exec executable="python" failonerror="true">
+            <arg value="build.py" />
+            <arg value="clean" />
+            <arg value="package" />
+            <arg value="--release" />
+            <arg value="--recompile" />
+            <arg value="--qtdir" />
+            <arg value="${qt.dir}" />
+            <arg value="--vcdir" />
+            <arg value="${vc.dir}" />
+            <arg value="--local-build" />
+            <arg value="--setup" />
+            <arg value="--rev" />
+            <arg value="${svn.rev}" />
+            <arg value="--sign" />
+            <arg value="--build-number" />
+            <arg value="${build.number}" />
+            <arg value="--inject-version" />
+        </exec>
+
+        <delete dir="dist/yy40" />
+        <mkdir dir="dist/yy40" />
+        <copy file="dist/release/YYSetup.exe" tofile="dist/yy40/YYSetup.exe" />
+        <copy file="dist/release/pdb.tar.bz2" tofile="dist/yy40/pdb.tar.bz2" />
+        <copy file="dist/release/liveupdate.tar.gz" tofile="dist/yy40/liveupdate.tar.gz" />
+    </target>
+
+    <target name="CoverageBuild">
+        <exec executable="python" failonerror="true">
+            <arg value="build.py" />
+            <arg value="clean" />
+            <arg value="package" />
+            <arg value="--release" />
+            <arg value="--coverage" />
+            <arg value="--recompile" />
+            <arg value="--qtdir" />
+            <arg value="${qt.dir}" />
+            <arg value="--vcdir" />
+            <arg value="${vc.dir}" />
+            <arg value="--local-build" />
+            <arg value="--setup" />
+            <arg value="--rev" />
+            <arg value="${svn.rev}" />
+            <arg value="--sign" />
+            <arg value="--build-number" />
+            <arg value="${build.number}" />
+            <arg value="--inject-version" />
+        </exec>
+
+        <delete dir="dist/yy40" />
+        <mkdir dir="dist/yy40" />
+        <copy file="dist/release/YYSetup.exe" tofile="dist/yy40/YYSetup.exe" />
+        <copy file="dist/release/pdb.tar.bz2" tofile="dist/yy40/pdb.tar.bz2" />
+        <copy file="dist/release/liveupdate.tar.gz" tofile="dist/yy40/liveupdate.tar.gz" />
+    </target>
+</project>

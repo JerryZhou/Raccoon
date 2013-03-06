@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="dwappd"
+	ProjectGUID="{737C8542-049D-3DB0-9705-A58B46FA58A4}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\debug_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,&quot;.&quot;,&quot;..\..\..\depends\dw3rd\wtl-80\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\debug_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\debug_static\"
+				Optimization ="4"
+				PrecompiledHeaderFile="$(IntDir)\dwappd.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_APP,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwappd.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_APP,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,_DEBUG"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\release_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,&quot;.&quot;,&quot;..\..\..\depends\dw3rd\wtl-80\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\release_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\release_static\"
+				Optimization ="2"
+				PrecompiledHeaderFile="$(IntDir)\dwapp.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_APP,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,NDEBUG"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwapp.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_APP,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="dwapp.cpp" />
+			<File
+				RelativePath="messaging\dwasyncport.cpp" />
+			<File
+				RelativePath="io\dwbinaryreader.cpp" />
+			<File
+				RelativePath="io\dwbinarywriter.cpp" />
+			<File
+				RelativePath="messaging\dwblockinghandlerthread.cpp" />
+			<File
+				RelativePath="system\dwbyteorder.cpp" />
+			<File
+				RelativePath="net\http\dwdefaulthttprequesthandler.cpp" />
+			<File
+				RelativePath="io\dwfilestream.cpp" />
+			<File
+				RelativePath="io\dwfiletime.cpp" />
+			<File
+				RelativePath="io\dwfswrapperex.cpp" />
+			<File
+				RelativePath="messaging\dwhandler.cpp" />
+			<File
+				RelativePath="messaging\dwhandlerthreadbase.cpp" />
+			<File
+				RelativePath="net\http\debug\dwhelloworldrequesthandler.cpp" />
+			<File
+				RelativePath="net\http\html\dwhtmlelement.cpp" />
+			<File
+				RelativePath="net\http\html\dwhtmlpagewriter.cpp" />
+			<File
+				RelativePath="net\http\dwhttpclient.cpp" />
+			<File
+				RelativePath="net\http\dwhttpclienteventport.cpp" />
+			<File
+				RelativePath="net\http\dwhttpclientregistry.cpp" />
+			<File
+				RelativePath="net\http\dwhttpinterface.cpp" />
+			<File
+				RelativePath="net\http\dwhttpmessagehandler.cpp" />
+			<File
+				RelativePath="net\http\dwhttpprotocol.cpp" />
+			<File
+				RelativePath="net\http\dwhttprequest.cpp" />
+			<File
+				RelativePath="net\http\dwhttprequesthandler.cpp" />
+			<File
+				RelativePath="net\http\dwhttprequestreader.cpp" />
+			<File
+				RelativePath="net\http\dwhttprequestwriter.cpp" />
+			<File
+				RelativePath="net\http\dwhttpresponsereader.cpp" />
+			<File
+				RelativePath="net\http\dwhttpresponsewriter.cpp" />
+			<File
+				RelativePath="net\http\dwhttpserver.cpp" />
+			<File
+				RelativePath="net\http\dwhttpserverproxy.cpp" />
+			<File
+				RelativePath="net\http\dwhttpstatus.cpp" />
+			<File
+				RelativePath="net\http\dwhttpstream.cpp" />
+			<File
+				RelativePath="debug\handlers\dwimageshttphandler.cpp" />
+			<File
+				RelativePath="messaging\dwinterfacebase.cpp" />
+			<File
+				RelativePath="messaging\dwinterfacehandlerbase.cpp" />
+			<File
+				RelativePath="net\dwipaddress.cpp" />
+			<File
+				RelativePath="kernel\dwmainapplication.cpp" />
+			<File
+				RelativePath="util\dwmathutil.cpp" />
+			<File
+				RelativePath="io\dwmemorystream.cpp" />
+			<File
+				RelativePath="messaging\dwmessage.cpp" />
+			<File
+				RelativePath="kernel\dwrefcounted.cpp" />
+			<File
+				RelativePath="resource\dwresourcehandlerhttp.cpp" />
+			<File
+				RelativePath="debug\handlers\dwresourcehttpdebughandler.cpp" />
+			<File
+				RelativePath="resource\dwresourcehttpeventport.cpp" />
+			<File
+				RelativePath="resource\dwresourcemappinghttp.cpp" />
+			<File
+				RelativePath="resource\dwresourceprotocol.cpp" />
+			<File
+				RelativePath="debug\handlers\dwringloghttphandler.cpp" />
+			<File
+				RelativePath="debug\handlers\dwrttiobjecthandler.cpp" />
+			<File
+				RelativePath="messaging\dwrunthroughhandlerthread.cpp" />
+			<File
+				RelativePath="net\dwsocket.cpp" />
+			<File
+				RelativePath="io\dwstream.cpp" />
+			<File
+				RelativePath="io\dwstreamreader.cpp" />
+			<File
+				RelativePath="io\dwstreamwriter.cpp" />
+			<File
+				RelativePath="util\dwstringutil.cpp" />
+			<File
+				RelativePath="net\http\svg\dwsvglinechartwriter.cpp" />
+			<File
+				RelativePath="net\http\svg\dwsvgpagewriter.cpp" />
+			<File
+				RelativePath="net\http\debug\dwsvgtestpagehandler.cpp" />
+			<File
+				RelativePath="thread\dwsyncevent.cpp" />
+			<File
+				RelativePath="net\dwtcpclient.cpp" />
+			<File
+				RelativePath="net\dwtcpconnection.cpp" />
+			<File
+				RelativePath="net\dwtcpserver.cpp" />
+			<File
+				RelativePath="io\dwtextreader.cpp" />
+			<File
+				RelativePath="io\dwtextwriter.cpp" />
+			<File
+				RelativePath="thread\dwthread.cpp" />
+			<File
+				RelativePath="util\dwutil.cpp" />
+			<File
+				RelativePath="io\dwxmlreader.cpp" />
+			<File
+				RelativePath="io\dwxmlwriter.cpp" />
+			<File
+				RelativePath="io\tinyxml\tinystr.cpp" />
+			<File
+				RelativePath="io\tinyxml\tinyxml.cpp" />
+			<File
+				RelativePath="io\tinyxml\tinyxmlerror.cpp" />
+			<File
+				RelativePath="io\tinyxml\tinyxmlparser.cpp" />
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="dwapp.h" />
+			<File
+				RelativePath="messaging\dwasyncport.h" />
+			<File
+				RelativePath="io\dwbinaryreader.h" />
+			<File
+				RelativePath="io\dwbinarywriter.h" />
+			<File
+				RelativePath="messaging\dwblockinghandlerthread.h" />
+			<File
+				RelativePath="system\dwbyteorder.h" />
+			<File
+				RelativePath="util\dwconstutil.h" />
+			<File
+				RelativePath="thread\dwcpuid.h" />
+			<File
+				RelativePath="net\http\dwdefaulthttprequesthandler.h" />
+			<File
+				RelativePath="io\dwfilestream.h" />
+			<File
+				RelativePath="io\dwfiletime.h" />
+			<File
+				RelativePath="io\dwfswrapperex.h" />
+			<File
+				RelativePath="messaging\dwhandler.h" />
+			<File
+				RelativePath="messaging\dwhandlerthreadbase.h" />
+			<File
+				RelativePath="net\http\debug\dwhelloworldrequesthandler.h" />
+			<File
+				RelativePath="net\http\html\dwhtmlelement.h" />
+			<File
+				RelativePath="net\http\html\dwhtmlpagewriter.h" />
+			<File
+				RelativePath="net\http\dwhttpclient.h" />
+			<File
+				RelativePath="net\http\dwhttpclienteventport.h" />
+			<File
+				RelativePath="net\http\dwhttpclientregistry.h" />
+			<File
+				RelativePath="net\http\dwhttpinterface.h" />
+			<File
+				RelativePath="net\http\dwhttpmessagehandler.h" />
+			<File
+				RelativePath="net\http\dwhttpmethod.h" />
+			<File
+				RelativePath="net\http\dwhttpprotocol.h" />
+			<File
+				RelativePath="net\http\dwhttprequest.h" />
+			<File
+				RelativePath="net\http\dwhttprequesthandler.h" />
+			<File
+				RelativePath="net\http\dwhttprequestreader.h" />
+			<File
+				RelativePath="net\http\dwhttprequestwriter.h" />
+			<File
+				RelativePath="net\http\dwhttpresponsereader.h" />
+			<File
+				RelativePath="net\http\dwhttpresponsewriter.h" />
+			<File
+				RelativePath="net\http\dwhttpserver.h" />
+			<File
+				RelativePath="net\http\dwhttpserverproxy.h" />
+			<File
+				RelativePath="net\http\dwhttpstatus.h" />
+			<File
+				RelativePath="net\http\dwhttpstream.h" />
+			<File
+				RelativePath="debug\handlers\dwimageshttphandler.h" />
+			<File
+				RelativePath="messaging\dwinterfacebase.h" />
+			<File
+				RelativePath="messaging\dwinterfacehandlerbase.h" />
+			<File
+				RelativePath="kernel\dwinterlocked.h" />
+			<File
+				RelativePath="net\dwipaddress.h" />
+			<File
+				RelativePath="util\dwmacroutil.h" />
+			<File
+				RelativePath="kernel\dwmainapplication.h" />
+			<File
+				RelativePath="util\dwmathutil.h" />
+			<File
+				RelativePath="io\dwmemorystream.h" />
+			<File
+				RelativePath="messaging\dwmessage.h" />
+			<File
+				RelativePath="messaging\dwmessageid.h" />
+			<File
+				RelativePath="kernel\dwptr.h" />
+			<File
+				RelativePath="kernel\dwrefcounted.h" />
+			<File
+				RelativePath="resource\dwresourcehandlerhttp.h" />
+			<File
+				RelativePath="debug\handlers\dwresourcehttpdebughandler.h" />
+			<File
+				RelativePath="resource\dwresourcehttpeventport.h" />
+			<File
+				RelativePath="resource\dwresourcemappinghttp.h" />
+			<File
+				RelativePath="resource\dwresourceprotocol.h" />
+			<File
+				RelativePath="debug\handlers\dwringloghttphandler.h" />
+			<File
+				RelativePath="debug\handlers\dwrttiobjecthandler.h" />
+			<File
+				RelativePath="messaging\dwrunthroughhandlerthread.h" />
+			<File
+				RelativePath="thread\dwsafequeue.h" />
+			<File
+				RelativePath="kernel\dwsinglton.h" />
+			<File
+				RelativePath="net\dwsocket.h" />
+			<File
+				RelativePath="io\dwstream.h" />
+			<File
+				RelativePath="io\dwstreamreader.h" />
+			<File
+				RelativePath="io\dwstreamwriter.h" />
+			<File
+				RelativePath="util\dwstringutil.h" />
+			<File
+				RelativePath="net\http\svg\dwsvglinechartwriter.h" />
+			<File
+				RelativePath="net\http\svg\dwsvgpagewriter.h" />
+			<File
+				RelativePath="net\http\debug\dwsvgtestpagehandler.h" />
+			<File
+				RelativePath="thread\dwsyncevent.h" />
+			<File
+				RelativePath="net\dwtcpclient.h" />
+			<File
+				RelativePath="net\dwtcpconnection.h" />
+			<File
+				RelativePath="net\dwtcpserver.h" />
+			<File
+				RelativePath="io\dwtextreader.h" />
+			<File
+				RelativePath="io\dwtextwriter.h" />
+			<File
+				RelativePath="thread\dwthread.h" />
+			<File
+				RelativePath="thread\dwthreadid.h" />
+			<File
+				RelativePath="util\dwutil.h" />
+			<File
+				RelativePath="io\dwxmlreader.h" />
+			<File
+				RelativePath="io\dwxmlwriter.h" />
+			<File
+				RelativePath="stable.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="io\tinyxml\tinystr.h" />
+			<File
+				RelativePath="io\tinyxml\tinyxml.h" />
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="stable.h.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

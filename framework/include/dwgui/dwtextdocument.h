@@ -1,0 +1,1 @@
+#include "../../src/gui/widgets/edit/dwtextdocument.h"

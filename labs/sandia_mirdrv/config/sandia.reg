@@ -1,0 +1,14 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sandia]
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sandia\DEVICE0]
+"Device Description"="sandia mirror driver"
+"Installed Display Drivers"="sandia"
+"MirrorDriver"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Hardware Profiles\Current\System\CurrentControlSet\Services\sandia]
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Hardware Profiles\Current\System\CurrentControlSet\Services\sandia\DEVICE0]
+"Attach.ToDesktop"=dword:1
+
+

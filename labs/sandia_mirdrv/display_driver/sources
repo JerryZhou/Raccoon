@@ -1,0 +1,17 @@
+TARGETNAME = sandia
+TARGETTYPE = GDI_DRIVER
+
+TARGETLIBS = $(TARGETLIBS) $(SDK_LIB_PATH)\libcntpr.lib
+
+TARGET_DESTINATION=retail
+
+!IFNDEF MSC_WARNING_LEVEL
+MSC_WARNING_LEVEL=/W4
+!ENDIF
+
+MSC_WARNING_LEVEL = $(MSC_WARNING_LEVEL) /WX
+
+INCLUDES = ..\inc; ..\..\inc; ..\..\..\inc; $(DDK_INC_PATH)
+
+SOURCES = display_driver.c \
+          sandia_display.rc

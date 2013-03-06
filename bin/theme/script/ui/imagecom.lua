@@ -1,0 +1,1 @@
+function GET_IMAGE_PROXY(img)	return Image._image_proxy(img)end

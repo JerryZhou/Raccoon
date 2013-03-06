@@ -1,0 +1,11 @@
+TARGETNAME = sandia
+TARGETTYPE = DRIVER
+
+TARGET_DESTINATION = retail
+
+TARGETLIBS = $(DDK_LIB_PATH)\videoprt.lib
+
+INCLUDES = ..\inc; ..\..\inc
+
+SOURCES = sandia_miniport.c \
+          sandia_miniport.rc

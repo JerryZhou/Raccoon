@@ -1,0 +1,6 @@
+# 请查询 http://repo.yypm.com/dwintegrate 下各个子目录里面的version.info
+# 版本号等于releaseversion字段的值
+
+[dw3rd]
+wtl-80=2011.80.0.20
+gtest-1.5.0=2011.150.1.34

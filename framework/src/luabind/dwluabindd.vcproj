@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="dwluabindd"
+	ProjectGUID="{CB92AFEE-586C-39CF-A944-2C858D6A33A2}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\debug_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\debug_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\debug_static\"
+				Optimization ="4"
+				PrecompiledHeaderFile="$(IntDir)\dwluabindd.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_LUABIND,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwluabindd.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_LUABIND,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,_DEBUG"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\release_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\release_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\release_static\"
+				Optimization ="2"
+				PrecompiledHeaderFile="$(IntDir)\dwluabind.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_LUABIND,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,NDEBUG"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwluabind.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_LUABIND,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="export\dwanchorexport.cpp" />
+			<File
+				RelativePath="export\dwanimationexport.cpp" />
+			<File
+				RelativePath="export\dwappexport.cpp" />
+			<File
+				RelativePath="export\dwassignexport.cpp" />
+			<File
+				RelativePath="delegate\dwdelegate.cpp" />
+			<File
+				RelativePath="delegate\dwdelegatelib.cpp" />
+			<File
+				RelativePath="delegate\dweventdelegate.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatechar.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatedrag.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatedragmove.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatefocus.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegategraphicsitem.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegateitemchange.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatekey.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemouse.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemouseclicked.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemousemove.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemousewheel.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatescene.cpp" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatetips.cpp" />
+			<File
+				RelativePath="export\dweventexport.cpp" />
+			<File
+				RelativePath="export\dwfontexport.cpp" />
+			<File
+				RelativePath="export\dwimageexport.cpp" />
+			<File
+				RelativePath="delegate\dwitemdelegate.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatebackgrounditem.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatebasepositioner.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegateframeitem.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegateframewindow.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegategridpositioner.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatelineedit.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatemarginspixmapitem.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatepixmap.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegateprogressbar.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegaterect.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatescrollarea.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatescrollbar.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatesimpletext.cpp" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatewidgetitem.cpp" />
+			<File
+				RelativePath="dwluabind.cpp" />
+			<File
+				RelativePath="bind\dwluaengine.cpp" />
+			<File
+				RelativePath="container\dwluaeventlib.cpp" />
+			<File
+				RelativePath="export\dwluaexport.cpp" />
+			<File
+				RelativePath="bind\dwluainterface.cpp" />
+			<File
+				RelativePath="container\dwluaitemlib.cpp" />
+			<File
+				RelativePath="bind\dwluapoppush.cpp" />
+			<File
+				RelativePath="container\dwluatimerlib.cpp" />
+			<File
+				RelativePath="generated\dwres_luabind_theme.cpp" />
+			<File
+				RelativePath="export\dwtimerexport.cpp" />
+			<File
+				RelativePath="export\dwuiexport.cpp" />
+			<File
+				RelativePath="lua\lapi.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lauxlib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lbaselib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lcode.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ldblib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ldebug.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ldo.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ldump.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lfunc.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lgc.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\linit.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\liolib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\llex.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lmathlib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lmem.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\loadlib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lobject.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lopcodes.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\loslib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lparser.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lstate.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lstring.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lstrlib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ltable.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ltablib.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\ltm.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lua.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lundump.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lvm.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\lzio.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="lua\print.c">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(NOINHERIT)"
+						UsePrecompiledHeader="0" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="export\dwanchorexport.h" />
+			<File
+				RelativePath="export\dwanchorexport_p.h" />
+			<File
+				RelativePath="export\dwanimationexport.h" />
+			<File
+				RelativePath="export\dwanimationexport_p.h" />
+			<File
+				RelativePath="export\dwappexport.h" />
+			<File
+				RelativePath="export\dwappexport_p.h" />
+			<File
+				RelativePath="export\dwassignexport.h" />
+			<File
+				RelativePath="export\dwassignexport_p.h" />
+			<File
+				RelativePath="bind\dwbindnamespace.h" />
+			<File
+				RelativePath="delegate\dwdelegate.h" />
+			<File
+				RelativePath="delegate\dwdelegatelib.h" />
+			<File
+				RelativePath="delegate\dweventdelegate.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatechar.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatedrag.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatedragmove.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatefocus.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegategraphicsitem.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegateitemchange.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatekey.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemouse.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemouseclicked.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemousemove.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatemousewheel.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatescene.h" />
+			<File
+				RelativePath="delegate\eventdelegate\dweventdelegatetips.h" />
+			<File
+				RelativePath="export\dweventexport.h" />
+			<File
+				RelativePath="export\dweventexport_p.h" />
+			<File
+				RelativePath="export\dwexportutil_p.h" />
+			<File
+				RelativePath="export\dwfontexport.h" />
+			<File
+				RelativePath="export\dwfontexport_p.h" />
+			<File
+				RelativePath="export\dwimageexport.h" />
+			<File
+				RelativePath="export\dwimageexport_p.h" />
+			<File
+				RelativePath="delegate\dwitemdelegate.h" />
+			<File
+				RelativePath="delegate\dwitemdelegate_p.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatebackgrounditem.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatebasepositioner.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegateframeitem.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegateframewindow.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegategridpositioner.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatelineedit.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatemarginspixmapitem.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatepixmap.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegateprogressbar.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegaterect.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatescrollarea.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatescrollbar.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatesimpletext.h" />
+			<File
+				RelativePath="delegate\itemdelegate\dwitemdelegatewidgetitem.h" />
+			<File
+				RelativePath="bind\dwlua.h" />
+			<File
+				RelativePath="dwluabind.h" />
+			<File
+				RelativePath="bind\dwluaengine.h" />
+			<File
+				RelativePath="bind\dwluaengine_p.h" />
+			<File
+				RelativePath="container\dwluaeventlib.h" />
+			<File
+				RelativePath="export\dwluaexport.h" />
+			<File
+				RelativePath="bind\dwluainterface.h" />
+			<File
+				RelativePath="container\dwluaitemlib.h" />
+			<File
+				RelativePath="bind\dwluapoppush.h" />
+			<File
+				RelativePath="container\dwluatimerlib.h" />
+			<File
+				RelativePath="export\dwtimerexport.h" />
+			<File
+				RelativePath="export\dwtimerexport_p.h" />
+			<File
+				RelativePath="export\dwuiexport.h" />
+			<File
+				RelativePath="export\dwuiexport_p.h" />
+			<File
+				RelativePath="lua\lapi.h" />
+			<File
+				RelativePath="lua\lauxlib.h" />
+			<File
+				RelativePath="lua\lcode.h" />
+			<File
+				RelativePath="lua\ldebug.h" />
+			<File
+				RelativePath="lua\ldo.h" />
+			<File
+				RelativePath="lua\lfunc.h" />
+			<File
+				RelativePath="lua\lgc.h" />
+			<File
+				RelativePath="lua\llex.h" />
+			<File
+				RelativePath="lua\llimits.h" />
+			<File
+				RelativePath="lua\lmem.h" />
+			<File
+				RelativePath="lua\lobject.h" />
+			<File
+				RelativePath="lua\lopcodes.h" />
+			<File
+				RelativePath="lua\lparser.h" />
+			<File
+				RelativePath="lua\lstate.h" />
+			<File
+				RelativePath="lua\lstring.h" />
+			<File
+				RelativePath="lua\ltable.h" />
+			<File
+				RelativePath="lua\ltm.h" />
+			<File
+				RelativePath="lua\lua.h" />
+			<File
+				RelativePath="lua\luaconf.h" />
+			<File
+				RelativePath="lua\lualib.h" />
+			<File
+				RelativePath="lua\lundump.h" />
+			<File
+				RelativePath="lua\lvm.h" />
+			<File
+				RelativePath="lua\lzio.h" />
+			<File
+				RelativePath="stable.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="stable.h.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

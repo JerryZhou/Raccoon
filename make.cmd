@@ -1,0 +1,1 @@
+devenv raccoon.sln /build %1

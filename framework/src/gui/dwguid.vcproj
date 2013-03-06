@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="dwguid"
+	ProjectGUID="{7F6486A9-83B1-3DF1-922E-BC10991E574C}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\debug_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,&quot;.&quot;,&quot;..\..\..\depends\dw3rd\wtl-80\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\debug_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\debug_static\"
+				Optimization ="4"
+				PrecompiledHeaderFile="$(IntDir)\dwguid.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_GUI,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwguid.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_GUI,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,_DEBUG"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			ConfigurationType="4"
+			IntermediateDirectory="..\..\..\tmp\$(ProjectName)\release_static\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;.&quot;,&quot;..\..\include&quot;,&quot;.&quot;,&quot;..\..\..\depends\dw3rd\wtl-80\include&quot;,..\..\..\..\OpenSource\Qt\4.7.3\mkspecs\default"
+				AdditionalOptions="-Zm200 /MP -w34100 -w34189"
+				AssemblerListingLocation="..\..\..\tmp\$(ProjectName)\release_static\"
+				BufferSecurityCheck="true"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				ForcedIncludeFiles="stable.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\..\..\tmp\$(ProjectName)\release_static\"
+				Optimization ="2"
+				PrecompiledHeaderFile="$(IntDir)\dwgui.pch"
+				PrecompiledHeaderThrough="stable.h"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_GUI,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD,NDEBUG"
+				ProgramDataBaseFileName="$(IntDir)"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="false"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="..\..\lib\dwgui.lib"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,BUILD_DW_GUI,_CRT_SECURE_NO_WARNINGS,_CRT_NON_CONFORMING_SWPRINTFS,UNICODE,BUILD_DW_FRAMEWORK_STATIC_BUILD"
+				ResourceOutputFileName="..\..\lib\/$(InputName).res" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="animation\dwabstractanimation.cpp" />
+			<File
+				RelativePath="accessible\dwaccessible.cpp" />
+			<File
+				RelativePath="accessible\dwaccessibleapplication.cpp" />
+			<File
+				RelativePath="accessible\dwaccessibleitem.cpp" />
+			<File
+				RelativePath="accessible\dwaccessibleobject.cpp" />
+			<File
+				RelativePath="widgets\dwaccessiblewidget.cpp" />
+			<File
+				RelativePath="accessible\dwaccessiblewindow.cpp" />
+			<File
+				RelativePath="layout\dwanchorline.cpp" />
+			<File
+				RelativePath="layout\dwanchors.cpp" />
+			<File
+				RelativePath="animation\dwanimationevent.cpp" />
+			<File
+				RelativePath="animation\dwanimationgroup.cpp" />
+			<File
+				RelativePath="animation\dwanimationlibrary.cpp" />
+			<File
+				RelativePath="animation\dwanimationupdater.cpp" />
+			<File
+				RelativePath="event\dwappeventdispatch.cpp" />
+			<File
+				RelativePath="system\dwapplauncher.cpp" />
+			<File
+				RelativePath="kernel\dwapplication.cpp" />
+			<File
+				RelativePath="assign\dwassign.cpp" />
+			<File
+				RelativePath="assign\dwassignlib.cpp" />
+			<File
+				RelativePath="layout\dwbasepositioner.cpp" />
+			<File
+				RelativePath="widgets\edit\dwcharactersdocvalidater.cpp" />
+			<File
+				RelativePath="widgets\edit\dwcharformat.cpp" />
+			<File
+				RelativePath="widgets\dwcheckbox.cpp" />
+			<File
+				RelativePath="kernel\dwclipboard.cpp" />
+			<File
+				RelativePath="layout\dwcolumnpositioner.cpp" />
+			<File
+				RelativePath="kernel\dwcommandlineargs.cpp" />
+			<File
+				RelativePath="widgets\edit\dwcontentsizevalidater.cpp" />
+			<File
+				RelativePath="kernel\dwcursor.cpp" />
+			<File
+				RelativePath="event\dwdefaultitemeventhandler.cpp" />
+			<File
+				RelativePath="event\dwdefaultsceneeventhandler.cpp" />
+			<File
+				RelativePath="event\dwdefaultvieweventhandler.cpp" />
+			<File
+				RelativePath="kernel\dwdesktop.cpp" />
+			<File
+				RelativePath="widgets\edit\dwdocumentvalidater.cpp" />
+			<File
+				RelativePath="graphicsview\dwdummys.cpp" />
+			<File
+				RelativePath="animation\dweasingcurve.cpp" />
+			<File
+				RelativePath="widgets\edit\dwediteventlistener.cpp" />
+			<File
+				RelativePath="animation\dwelapsedtimer.cpp" />
+			<File
+				RelativePath="system\dwenvironment.cpp" />
+			<File
+				RelativePath="kernel\dwevent.cpp" />
+			<File
+				RelativePath="kernel\dweventdispatch.cpp" />
+			<File
+				RelativePath="kernel\dweventhandler.cpp" />
+			<File
+				RelativePath="kernel\dweventid.cpp" />
+			<File
+				RelativePath="kernel\dweventport.cpp" />
+			<File
+				RelativePath="event\dweventsignaldispatch.cpp" />
+			<File
+				RelativePath="kernel\dwfactory.cpp" />
+			<File
+				RelativePath="widgets\dwframewindow.cpp" />
+			<File
+				RelativePath="assign\dwfswrapper.cpp" />
+			<File
+				RelativePath="widgets\dwgraphicsbackgrounditem.cpp" />
+			<File
+				RelativePath="widgets\edit\dwgraphicsedittext.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsevent.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicseventdispatch.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicseventhandler.cpp" />
+			<File
+				RelativePath="widgets\dwgraphicsframeitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicshook.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitemhook.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitemlistener.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitemvisitor.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicslayoutitem.cpp" />
+			<File
+				RelativePath="widgets\dwgraphicsmarginspixmapitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsninepatchitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicspixmapitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsrectitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscene.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscene_bsp_p.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscenebsptreeindex.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicssceneindex.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscenelinearindex.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscenelistener.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicssimpletextitem.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsutil.cpp" />
+			<File
+				RelativePath="graphicsview\dwgraphicsview.cpp" />
+			<File
+				RelativePath="layout\dwgridpositioner.cpp" />
+			<File
+				RelativePath="dwgui.cpp" />
+			<File
+				RelativePath="kernel\dwi18n.cpp" />
+			<File
+				RelativePath="widgets\dwimagewidget.cpp" />
+			<File
+				RelativePath="widgets\edit\dwinputfocuspainter.cpp" />
+			<File
+				RelativePath="widgets\dwlabel.cpp" />
+			<File
+				RelativePath="widgets\edit\dwlayoutenginedocvalidater.cpp" />
+			<File
+				RelativePath="widgets\edit\dwlineedit.cpp" />
+			<File
+				RelativePath="widgets\dwmainwindow.cpp" />
+			<File
+				RelativePath="kernel\dwmediatype.cpp" />
+			<File
+				RelativePath="widgets\dwmenu.cpp" />
+			<File
+				RelativePath="widgets\dwmessagebox.cpp" />
+			<File
+				RelativePath="kernel\dwmimedata.cpp" />
+			<File
+				RelativePath="debug\dwminidump.cpp" />
+			<File
+				RelativePath="widgets\edit\dwmultiedit.cpp" />
+			<File
+				RelativePath="widgets\edit\dwmultiediteventhandler.cpp" />
+			<File
+				RelativePath="widgets\edit\dwmultitextlayoutengine.cpp" />
+			<File
+				RelativePath="widgets\edit\dwnumwidthvalidater.cpp" />
+			<File
+				RelativePath="animation\dwpausedanimation.cpp" />
+			<File
+				RelativePath="plugin\dwpermission.cpp" />
+			<File
+				RelativePath="plugin\dwplugin.cpp" />
+			<File
+				RelativePath="plugin\dwplugincontext.cpp" />
+			<File
+				RelativePath="plugin\dwplugindesc.cpp" />
+			<File
+				RelativePath="plugin\dwpluginevent.cpp" />
+			<File
+				RelativePath="plugin\dwplugineventdispatch.cpp" />
+			<File
+				RelativePath="plugin\dwpluginlib.cpp" />
+			<File
+				RelativePath="plugin\dwpluginmapping.cpp" />
+			<File
+				RelativePath="plugin\dwpluginversion.cpp" />
+			<File
+				RelativePath="system\dwprivateprofile.cpp" />
+			<File
+				RelativePath="widgets\dwprogressbar.cpp" />
+			<File
+				RelativePath="animation\dwpropertyanimation.cpp" />
+			<File
+				RelativePath="propertys\dwpropertys.cpp" />
+			<File
+				RelativePath="widgets\dwpushbutton.cpp" />
+			<File
+				RelativePath="generated\dwres_gui_theme.cpp" />
+			<File
+				RelativePath="resource\dwresourceevent.cpp" />
+			<File
+				RelativePath="resource\dwresourceinterface.cpp" />
+			<File
+				RelativePath="resource\dwresourcelib.cpp" />
+			<File
+				RelativePath="resource\dwresourcemapping.cpp" />
+			<File
+				RelativePath="resource\dwresourcemappingdll.cpp" />
+			<File
+				RelativePath="resource\dwresourcemappingfile.cpp" />
+			<File
+				RelativePath="resource\dwresourcemappingzip.cpp" />
+			<File
+				RelativePath="widgets\edit\dwrichchar.cpp" />
+			<File
+				RelativePath="debug\dwringlog.cpp" />
+			<File
+				RelativePath="debug\dwringlogcase.cpp" />
+			<File
+				RelativePath="debug\dwringloglib.cpp" />
+			<File
+				RelativePath="layout\dwrowpositioner.cpp" />
+			<File
+				RelativePath="kernel\dwrtti.cpp" />
+			<File
+				RelativePath="kernel\dwrttiobject.cpp" />
+			<File
+				RelativePath="kernel\dwrttiobjectptr.cpp" />
+			<File
+				RelativePath="widgets\dwscrollarea.cpp" />
+			<File
+				RelativePath="widgets\dwscrollbar.cpp" />
+			<File
+				RelativePath="widgets\edit\dwsimpleedit.cpp" />
+			<File
+				RelativePath="widgets\edit\dwsimpleediteventhandler.cpp" />
+			<File
+				RelativePath="system\dwsysteminfo.cpp" />
+			<File
+				RelativePath="widgets\edit\dwtextcursor.cpp" />
+			<File
+				RelativePath="widgets\edit\dwtextdocument.cpp" />
+			<File
+				RelativePath="widgets\edit\dwtextformat.cpp" />
+			<File
+				RelativePath="widgets\edit\dwtextlayoutengine.cpp" />
+			<File
+				RelativePath="kernel\dwtimer.cpp" />
+			<File
+				RelativePath="widgets\dwtitlebar.cpp" />
+			<File
+				RelativePath="widgets\dwtrayicon.cpp" />
+			<File
+				RelativePath="widgets\dwtreewidget.cpp" />
+			<File
+				RelativePath="assign\dwurl.cpp" />
+			<File
+				RelativePath="animation\dwvariantanimation.cpp" />
+			<File
+				RelativePath="kernel\dwversion.cpp" />
+			<File
+				RelativePath="widgets\dwwidgetevent.cpp" />
+			<File
+				RelativePath="widgets\dwwidgeteventhandler.cpp" />
+			<File
+				RelativePath="widgets\dwwidgetitem.cpp" />
+			<File
+				RelativePath="system\dwwin32registry.cpp" />
+			<File
+				RelativePath="kernel\dwwindow.cpp" />
+			<File
+				RelativePath="kernel\dwwindowadapter.cpp" />
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="animation\dwabstractanimation.h" />
+			<File
+				RelativePath="accessible\dwaccessible.h" />
+			<File
+				RelativePath="accessible\dwaccessibleapplication.h" />
+			<File
+				RelativePath="accessible\dwaccessibleitem.h" />
+			<File
+				RelativePath="accessible\dwaccessibleobject.h" />
+			<File
+				RelativePath="widgets\dwaccessiblewidget.h" />
+			<File
+				RelativePath="accessible\dwaccessiblewindow.h" />
+			<File
+				RelativePath="layout\dwanchorline.h" />
+			<File
+				RelativePath="layout\dwanchors.h" />
+			<File
+				RelativePath="animation\dwanimationevent.h" />
+			<File
+				RelativePath="animation\dwanimationgroup.h" />
+			<File
+				RelativePath="animation\dwanimationlibrary.h" />
+			<File
+				RelativePath="animation\dwanimationupdater.h" />
+			<File
+				RelativePath="event\dwappeventdispatch.h" />
+			<File
+				RelativePath="event\dwappeventdispatch_p.h" />
+			<File
+				RelativePath="system\dwapplauncher.h" />
+			<File
+				RelativePath="kernel\dwapplication.h" />
+			<File
+				RelativePath="assign\dwassign.h" />
+			<File
+				RelativePath="assign\dwassignlib.h" />
+			<File
+				RelativePath="layout\dwbasepositioner.h" />
+			<File
+				RelativePath="widgets\edit\dwcharactersdocvalidater.h" />
+			<File
+				RelativePath="widgets\edit\dwcharformat.h" />
+			<File
+				RelativePath="widgets\dwcheckbox.h" />
+			<File
+				RelativePath="widgets\dwcheckbox_p.h" />
+			<File
+				RelativePath="kernel\dwclipboard.h" />
+			<File
+				RelativePath="kernel\dwclipboard_p.h" />
+			<File
+				RelativePath="layout\dwcolumnpositioner.h" />
+			<File
+				RelativePath="kernel\dwcommandlineargs.h" />
+			<File
+				RelativePath="widgets\edit\dwcontentsizevalidater.h" />
+			<File
+				RelativePath="kernel\dwcursor.h" />
+			<File
+				RelativePath="event\dwdefaultitemeventhandler.h" />
+			<File
+				RelativePath="event\dwdefaultsceneeventhandler.h" />
+			<File
+				RelativePath="event\dwdefaultvieweventhandler.h" />
+			<File
+				RelativePath="kernel\dwdesktop.h" />
+			<File
+				RelativePath="widgets\edit\dwdocumentvalidater.h" />
+			<File
+				RelativePath="graphicsview\dwdummys.h" />
+			<File
+				RelativePath="animation\dweasing_p.h" />
+			<File
+				RelativePath="animation\dweasingcurve.h" />
+			<File
+				RelativePath="animation\dweasingcurvefunction_p.h" />
+			<File
+				RelativePath="widgets\edit\dwediteventlistener.h" />
+			<File
+				RelativePath="animation\dwelapsedtimer.h" />
+			<File
+				RelativePath="system\dwenvironment.h" />
+			<File
+				RelativePath="kernel\dwevent.h" />
+			<File
+				RelativePath="kernel\dweventdispatch.h" />
+			<File
+				RelativePath="kernel\dweventhandler.h" />
+			<File
+				RelativePath="kernel\dweventid.h" />
+			<File
+				RelativePath="kernel\dweventport.h" />
+			<File
+				RelativePath="event\dweventsignaldispatch.h" />
+			<File
+				RelativePath="kernel\dwfactory.h" />
+			<File
+				RelativePath="widgets\dwframewindow.h" />
+			<File
+				RelativePath="widgets\dwframewindow_p.h" />
+			<File
+				RelativePath="assign\dwfswrapper.h" />
+			<File
+				RelativePath="widgets\dwgraphicsbackgrounditem.h" />
+			<File
+				RelativePath="widgets\edit\dwgraphicsedittext.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsevent.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicseventdispatch.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicseventdispatch_p.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicseventhandler.h" />
+			<File
+				RelativePath="widgets\dwgraphicsframeitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicshook.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitemhook.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitemlistener.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsitemvisitor.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicslayoutitem.h" />
+			<File
+				RelativePath="widgets\dwgraphicsmarginspixmapitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsninepatchitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicspixmapitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsrectitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscene.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscene_bsp_p.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscenebsptreeindex.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicssceneindex.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscenelinearindex.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsscenelistener.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicssimpletextitem.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsutil.h" />
+			<File
+				RelativePath="graphicsview\dwgraphicsview.h" />
+			<File
+				RelativePath="layout\dwgridpositioner.h" />
+			<File
+				RelativePath="dwgui.h" />
+			<File
+				RelativePath="kernel\dwi18n.h" />
+			<File
+				RelativePath="widgets\dwimagewidget.h" />
+			<File
+				RelativePath="widgets\edit\dwinputfocuspainter.h" />
+			<File
+				RelativePath="kernel\dwkerneltype.h" />
+			<File
+				RelativePath="widgets\dwlabel.h" />
+			<File
+				RelativePath="widgets\edit\dwlayoutenginedocvalidater.h" />
+			<File
+				RelativePath="widgets\edit\dwlineedit.h" />
+			<File
+				RelativePath="widgets\dwmainwindow.h" />
+			<File
+				RelativePath="kernel\dwmediatype.h" />
+			<File
+				RelativePath="widgets\dwmenu.h" />
+			<File
+				RelativePath="widgets\dwmessagebox.h" />
+			<File
+				RelativePath="kernel\dwmimedata.h" />
+			<File
+				RelativePath="debug\dwminidump.h" />
+			<File
+				RelativePath="widgets\edit\dwmultiedit.h" />
+			<File
+				RelativePath="widgets\edit\dwmultiediteventhandler.h" />
+			<File
+				RelativePath="widgets\edit\dwmultitextlayoutengine.h" />
+			<File
+				RelativePath="widgets\edit\dwnumwidthvalidater.h" />
+			<File
+				RelativePath="animation\dwpausedanimation.h" />
+			<File
+				RelativePath="plugin\dwpermission.h" />
+			<File
+				RelativePath="plugin\dwplugin.h" />
+			<File
+				RelativePath="plugin\dwplugincontext.h" />
+			<File
+				RelativePath="plugin\dwplugindesc.h" />
+			<File
+				RelativePath="plugin\dwpluginenum.h" />
+			<File
+				RelativePath="plugin\dwpluginevent.h" />
+			<File
+				RelativePath="plugin\dwpluginevent_p.h" />
+			<File
+				RelativePath="plugin\dwplugineventdispatch.h" />
+			<File
+				RelativePath="plugin\dwpluginlib.h" />
+			<File
+				RelativePath="plugin\dwpluginmapping.h" />
+			<File
+				RelativePath="plugin\dwpluginpropertys.h" />
+			<File
+				RelativePath="plugin\dwpluginversion.h" />
+			<File
+				RelativePath="system\dwprivateprofile.h" />
+			<File
+				RelativePath="widgets\dwprogressbar.h" />
+			<File
+				RelativePath="animation\dwpropertyanimation.h" />
+			<File
+				RelativePath="propertys\dwpropertys.h" />
+			<File
+				RelativePath="widgets\dwpushbutton.h" />
+			<File
+				RelativePath="resource\dwresourceevent.h" />
+			<File
+				RelativePath="resource\dwresourceinterface.h" />
+			<File
+				RelativePath="resource\dwresourcelib.h" />
+			<File
+				RelativePath="resource\dwresourcemapping.h" />
+			<File
+				RelativePath="resource\dwresourcemappingdll.h" />
+			<File
+				RelativePath="resource\dwresourcemappingfile.h" />
+			<File
+				RelativePath="resource\dwresourcemappingzip.h" />
+			<File
+				RelativePath="widgets\edit\dwrichchar.h" />
+			<File
+				RelativePath="debug\dwringlog.h" />
+			<File
+				RelativePath="debug\dwringlogcase.h" />
+			<File
+				RelativePath="debug\dwringloglib.h" />
+			<File
+				RelativePath="layout\dwrowpositioner.h" />
+			<File
+				RelativePath="kernel\dwrtti.h" />
+			<File
+				RelativePath="kernel\dwrttimacro.h" />
+			<File
+				RelativePath="kernel\dwrttiobject.h" />
+			<File
+				RelativePath="kernel\dwrttiobjectptr.h" />
+			<File
+				RelativePath="widgets\dwscrollarea.h" />
+			<File
+				RelativePath="widgets\dwscrollbar.h" />
+			<File
+				RelativePath="widgets\edit\dwsimpleedit.h" />
+			<File
+				RelativePath="widgets\edit\dwsimpleediteventhandler.h" />
+			<File
+				RelativePath="system\dwsysteminfo.h" />
+			<File
+				RelativePath="widgets\edit\dwtextcursor.h" />
+			<File
+				RelativePath="widgets\edit\dwtextdocument.h" />
+			<File
+				RelativePath="widgets\edit\dwtextformat.h" />
+			<File
+				RelativePath="widgets\edit\dwtextlayoutengine.h" />
+			<File
+				RelativePath="kernel\dwtimer.h" />
+			<File
+				RelativePath="widgets\dwtitlebar.h" />
+			<File
+				RelativePath="widgets\dwtrayicon.h" />
+			<File
+				RelativePath="widgets\dwtreewidget.h" />
+			<File
+				RelativePath="assign\dwurl.h" />
+			<File
+				RelativePath="animation\dwvariantanimation.h" />
+			<File
+				RelativePath="animation\dwvariantanimation_p.h" />
+			<File
+				RelativePath="kernel\dwversion.h" />
+			<File
+				RelativePath="kernel\dwweakptr.h" />
+			<File
+				RelativePath="widgets\dwwidgetenum.h" />
+			<File
+				RelativePath="widgets\dwwidgetevent.h" />
+			<File
+				RelativePath="widgets\dwwidgeteventhandler.h" />
+			<File
+				RelativePath="widgets\dwwidgetitem.h" />
+			<File
+				RelativePath="system\dwwin32registry.h" />
+			<File
+				RelativePath="kernel\dwwindow.h" />
+			<File
+				RelativePath="kernel\dwwindowadapter.h" />
+			<File
+				RelativePath="stable.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stable.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stable.h&quot;>>stable.h.cpp"
+						Description="Generating precompiled header source file &apos;stable.h.cpp&apos; ..."
+						Outputs="stable.h.cpp" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="stable.h.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="$(INHERIT)"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

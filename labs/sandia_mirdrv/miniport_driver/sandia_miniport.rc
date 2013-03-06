@@ -1,0 +1,12 @@
+#include <windows.h>
+#include <ntverp.h>
+
+#define VER_FILETYPE                VFT_DRV
+#define VER_FILESUBTYPE             VFT2_DRV_DISPLAY
+#define VER_FILEDESCRIPTION_STR     "sandia useless miniport driver"
+#define VER_INTERNALNAME_STR        "sandia.sys"
+#define VER_ORIGINALFILENAME_STR    "sandia.sys"
+
+#define VER_LANGNEUTRAL
+#include "common.ver"
+
