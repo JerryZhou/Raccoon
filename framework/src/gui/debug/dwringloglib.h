@@ -47,6 +47,7 @@ protected:
         LogContext(): log(NULL), owner(false){}
         LogContext(DwRingLog *l, bool o): log(l), owner(o){}
     };
+
 private:
     DwMap<DWORD, LogContext>  m_logs;
     DwMap<DwRingLog*, DWORD> m_logsId;
