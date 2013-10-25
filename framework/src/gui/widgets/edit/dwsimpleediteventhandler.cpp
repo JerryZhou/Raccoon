@@ -25,6 +25,7 @@ DwSimpleEditEventHandler::DwSimpleEditEventHandler(DwSimpleEdit* edit/* = NULL*/
     , m_edit(edit)
     , m_mouseDown(false)
     , m_dbClick(false)
+    , m_enableCopy(true)
 {
     ;
 }
@@ -131,24 +132,20 @@ void DwSimpleEditEventHandler::onKeyDown(DwKeyDownEvent* evt)
         {
         case 'c':
         case 'C':
-        {
-            DwString text;
-            if (selectCursor.cur() != cursor.cur())
-            {
-                text = selectText();
-            }
-            else
-            {
-                text = doc.plainText();
-            }
+	    if(m_enableCopy)
+	    {
+		DwString text;
+		if (selectCursor.cur() != cursor.cur()) {
+		    text = selectText();
+		} else {
+		    text = doc.plainText();
+		}
 
-            if (!text.isEmpty())
-            {
-                DwClipBoard::setText(text);
-            }
-
-        }
-        break;
+		if (!text.isEmpty()) {
+		    DwClipBoard::setText(text);
+		}
+	    }
+	    break;
         case 'v':
         case 'V':
             deal = true;
@@ -203,13 +200,13 @@ void DwSimpleEditEventHandler::onKeyDown(DwKeyDownEvent* evt)
             break;
         case 'a':
         case 'A':
-        {
-            cursor.moveEnd();
-            selectCursor.moveBegin();
-        }
-        layoutCacheInvalidate |= DwTextLayoutEngine::Cursor;
-        layoutCacheInvalidate |= DwTextLayoutEngine::Select;
-        break;
+	    {
+		cursor.moveEnd();
+		selectCursor.moveBegin();
+	    }
+	    layoutCacheInvalidate |= DwTextLayoutEngine::Cursor;
+	    layoutCacheInvalidate |= DwTextLayoutEngine::Select;
+	    break;
         case VK_LEFT:
             deal = true;
             cursor.moveWorldLeft();

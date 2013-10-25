@@ -131,3 +131,11 @@ void DwCharFormat::onLayout(const DwRectF &rect, const DwString &s)
     DW_UNUSED(rect);
     DW_UNUSED(s);
 }
+
+//------------------------------------------------------------------------------
+/**
+*/
+void DwCharFormat::refresh()
+{
+
+}

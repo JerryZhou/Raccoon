@@ -4,6 +4,7 @@
 //------------------------------------------------------------------------------
 class DwGraphicsSimpleTextItem;
 class DwGraphicsNinePatchItem;
+class DwFont;
 
 //------------------------------------------------------------------------------
 class DW_GUI_EXPORT DwPushButton : public DwWidgetItem
@@ -16,6 +17,7 @@ public:
     void setBackground(const DwUrl& );
     void setIcon(const DwUrl&, int idx=0);
     void setText(const DwString& );
+    void setFont(const DwFont &);
 
     inline DwGraphicsNinePatchItem* icon() const;
     inline DwGraphicsSimpleTextItem* text() const;

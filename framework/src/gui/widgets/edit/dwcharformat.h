@@ -28,6 +28,7 @@ public:
     virtual void onAdd(const DwRichChar *c);
     virtual void onDel(const DwRichChar *c);
     virtual void onLayout(const DwRectF &rect, const DwString &s);
+    virtual void refresh();
 
 protected:
     DwFont m_font;

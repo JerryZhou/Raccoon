@@ -140,6 +140,15 @@ void DwPushButton::setText(const DwString& text)
 //------------------------------------------------------------------------------
 /**
 */
+void DwPushButton::setFont( const DwFont &f )
+{
+    m_text->setFont(f);
+    update();
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
 void DwPushButton::setHorizable(bool h)
 {
     m_horizable = h;

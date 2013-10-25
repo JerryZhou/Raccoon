@@ -26,6 +26,9 @@ public:
     virtual void onMouseMoved(DwMouseMoveEvent* evt);
     virtual void onMouseDbClicked(DwMouseDbClickEvent* evt);
 
+    void enableCopy(bool b);
+    bool isEnableCopy() const;
+
 protected:
     void clearSelect();
     DwString selectText();
@@ -34,6 +37,23 @@ protected:
     DwSimpleEdit *m_edit;
     bool m_mouseDown;
     bool m_dbClick;
+    bool m_enableCopy;
 };// end of DwSimpleEditEventHandler
 DW_REGISTER_CLASS(DwSimpleEditEventHandler);
 
+//------------------------------------------------------------------------------
+/**
+*/
+inline void DwSimpleEditEventHandler::enableCopy(bool b)
+{
+    m_enableCopy = b;
+}
+
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline bool DwSimpleEditEventHandler::isEnableCopy() const
+{
+    return m_enableCopy;
+}

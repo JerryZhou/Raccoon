@@ -29,6 +29,7 @@ public:
     virtual bool validateDoc();
     virtual bool onAdd(DwRichChar *c, int pos = -1);
     virtual bool onDel(DwRichChar *c, int pos = -1);
+    virtual void refresh();
 
 protected:
     DwTextDocument *m_doc;

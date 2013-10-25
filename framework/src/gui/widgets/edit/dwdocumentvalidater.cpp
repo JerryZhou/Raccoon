@@ -119,3 +119,11 @@ bool DwDocumentValidater::onDel(DwRichChar *, int /* = -1*/)
 {
     return true;
 }
+
+//------------------------------------------------------------------------------
+/**
+*/
+void DwDocumentValidater::refresh()
+{
+
+}

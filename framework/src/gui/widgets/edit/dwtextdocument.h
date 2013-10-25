@@ -32,6 +32,7 @@ public:
     bool append(const DwRichChar &c);
     int  append(const DwString &s);
     void appendFormat(DwCharFormat *format);
+    bool replaceFormat(int idx, DwCharFormat *format);
 
     bool setCurrentFormat(int idx);
     bool setCurrentFormat(DwCharFormat *format);

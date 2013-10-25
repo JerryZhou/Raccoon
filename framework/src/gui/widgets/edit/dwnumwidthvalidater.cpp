@@ -66,8 +66,21 @@ bool DwNumWidthDocValidater::onAdd(DwRichChar *c, int pos/* = -1*/)
 {
     DW_UNUSED(pos);
     int delta = deltaOf(c);
+    int selectNum = 0;
+    if(m_doc)
+    {
+	DwTextCursor &cursor = m_doc->cursor();
+	DwTextCursor &selectCursor = m_doc->selectCursor();
 
-    if (m_curWidth + delta <= m_maxNumWidth)
+	if (selectCursor.cur() != cursor.cur())
+	{
+	    int start = dwMin<int>(selectCursor.cur(), cursor.cur());
+	    int end = dwMax<int>(selectCursor.cur(), cursor.cur());
+	    selectNum = end -start;
+	}
+    }
+
+    if (m_curWidth + delta - selectNum <= m_maxNumWidth)
     {
         m_curWidth += delta;
         return true;
@@ -85,3 +98,13 @@ bool DwNumWidthDocValidater::onDel(DwRichChar *c, int pos/* = -1*/)
     m_curWidth -= delta;
     return true;
 }
+
+//------------------------------------------------------------------------------
+/**
+*/
+void DwNumWidthDocValidater::refresh()
+{
+    m_curWidth = 0;
+}
+
+

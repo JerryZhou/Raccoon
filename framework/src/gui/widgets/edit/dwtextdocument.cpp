@@ -114,6 +114,23 @@ void DwTextDocument::appendFormat(DwCharFormat *format)
 //------------------------------------------------------------------------------
 /**
 */
+bool DwTextDocument::replaceFormat(int idx, DwCharFormat *format)
+{
+    if(idx < m_charFormats.size())
+    {
+	DwCharFormat* oldFormat = m_charFormats.at(idx);
+	DW_SAFE_DELETE(oldFormat);
+	m_charFormats[idx] = format;
+
+	return true;
+    }
+
+    return false;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
 int DwTextDocument::charFormatNum() const
 {
     return m_charFormats.size();
@@ -179,6 +196,21 @@ void DwTextDocument::clear()
     m_chars.clear();
     m_inputCursor.moveEnd();
     m_selectCursor.moveEnd();
+	for(DwVector<DwDocumentValidater*>::iterator i = m_validaters.begin();i != m_validaters.end();++i)
+	{
+		if(*i)
+		{
+			(*i)->refresh();
+		}
+	}
+
+	for(DwVector<DwCharFormat*>::iterator i = m_charFormats.begin();i != m_charFormats.end();++i)
+	{
+		if(*i)
+		{
+			(*i)->refresh();
+		}
+	}
 }
 
 //------------------------------------------------------------------------------
